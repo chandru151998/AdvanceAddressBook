@@ -17,7 +17,7 @@ namespace AddressBookProblem_LINQ_DAY35
         /// <returns></returns>
         public DataTable UpdatedContactDetails(DataTable dataTable)
         {
-            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Apoorva")).FirstOrDefault();
+            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Arpita")).FirstOrDefault();
             recordData["state"] = "Kerala";
             Console.WriteLine("***********UpdatedData***************");
             Console.WriteLine("FirstName:- " + recordData.Field<string>("firstName"));
@@ -44,7 +44,7 @@ namespace AddressBookProblem_LINQ_DAY35
             //getting all the data except the data to be deleted
             //saving them in new data table by copytodatatable method
             //returning the new data table
-            DataTable dataTableupdated = datatable.AsEnumerable().Except(datatable.AsEnumerable().Where(r => r.Field<string>("firstName") == "Kamalakar" && r.Field<string>("lastName") == "Singh")).CopyToDataTable();
+            DataTable dataTableupdated = datatable.AsEnumerable().Except(datatable.AsEnumerable().Where(r => r.Field<string>("firstName") == "Kamala" && r.Field<string>("lastName") == "Singh")).CopyToDataTable();
             foreach (var data in dataTableupdated.AsEnumerable())
             {
                 Console.WriteLine("FirstName:- " + data.Field<string>("firstName"));
