@@ -66,7 +66,7 @@ namespace AddressBookProblem_LINQ_DAY35
 
             //Inserting data into columns into datatable UC3
             addressBookTable.Rows.Add("Chandru", "K", "Mulgund", "Gadag", "Karnataka", 582103, 7406140157, "chandruk");
-            addressBookTable.Rows.Add("Arpita", "Patil", "Ambika Nagar", "hisar", "Telangana", 125433, 8585858585, "appoorva");
+            addressBookTable.Rows.Add("Arpita", "Patil", "Ambika Nagar", "hisar", "Telangana", 125433, 8585858585, "arpita");
             addressBookTable.Rows.Add("Ajay", "Kumar", "Andheri", "Mumbai", "Maharashtra", 125445, 7575757575, "ajaykumar");
             addressBookTable.Rows.Add("Kamal", "Singh", "Thanesar", "Kurukshetra", "Haryana", 136119, 9595959595, "kamalasingh");
             addressBookTable.Rows.Add("Praveen", "Kumar", "rohini", "Delhi", "Delhi", 435121, 7897897898, "praveenkumar");
