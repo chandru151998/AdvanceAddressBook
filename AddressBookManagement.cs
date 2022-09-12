@@ -17,7 +17,7 @@ namespace AddressBookProblem_LINQ_DAY35
         /// <returns></returns>
         public DataTable UpdatedContactDetails(DataTable dataTable)
         {
-            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Apoorva")).FirstOrDefault();
+            var recordData = dataTable.AsEnumerable().Where(a => a.Field<string>("FirstName").Equals("Arpita")).FirstOrDefault();
             recordData["state"] = "Kerala";
             Console.WriteLine("***********UpdatedData***************");
             Console.WriteLine("FirstName:- " + recordData.Field<string>("firstName"));
